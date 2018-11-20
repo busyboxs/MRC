@@ -1,11 +1,11 @@
 export CUDA_VISIBLE_DEVICES=0
 python run.py   \
---trainset 'data/preprocessed/trainset/search.train.json' \
-           'data/preprocessed/trainset/zhidao.train.json' \
---devset 'data/preprocessed/devset/search.dev.json' \
-         'data/preprocessed/devset/zhidao.dev.json' \
---testset 'data/preprocessed/testset/search.test.json' \
-          'data/preprocessed/testset/zhidao.test.json' \
+--trainset '/home/aistudio/data/data1410/search.train.json' \
+           '/home/aistudio/data/data1410/zhidao.train.json' \
+--devset '/home/aistudio/data/data1410/search.valid.json' \
+         '/home/aistudio/data/data1410/zhidao.valid.json' \
+--testset '/home/aistudio/data/data1410/search.test.json' \
+          '/home/aistudio/data/data1410/zhidao.test.json' \
 --vocab_dir 'data/vocab' \
 --use_gpu true \
 --save_dir ./models \
